@@ -1,1 +1,1 @@
-# RaspberryPI_trash_pickup_indicator
+# Raspberry Pi trash pickup indicator
