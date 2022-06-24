@@ -44,6 +44,7 @@ def set_led_light(pattern: str) -> None:
     """
     
     led_data = toInt(pattern)
+    # TODO: Show given LED light pattern
     return
 
 if __name__ == '__main__':
