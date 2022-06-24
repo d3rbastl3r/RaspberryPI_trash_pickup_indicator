@@ -12,7 +12,7 @@ def cli() -> None:
 
 @cli.command('state')
 @click.option('-a', '--activate', 'enable', is_flag=True, help='Activate the LED output if LEDs are deactivated')
-def get_state(enable: bool) -> None:
+def led_state(enable: bool) -> None:
     """Show the activation state (enabled or disabled)"""
     if enable:
         print('ENABLE :)')
