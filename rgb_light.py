@@ -8,7 +8,7 @@ def cli() -> None:
 
     Run 'COMMAND --help' for more information on a command
     """
-    pass
+    return
 
 @cli.command('state')
 @click.option('-a', '--activate', 'enable', is_flag=True, help='Activate the LED output if LEDs are deactivated')
@@ -19,7 +19,7 @@ def get_state(enable: bool) -> None:
         # TODO: Show the state
     
     # TODO: Read and show the state
-    pass
+    return
 
 @cli.command('light', short_help='Light up the RGB LEDs')
 @click.argument('pattern')
@@ -43,8 +43,8 @@ def set_led_light(pattern: str) -> None:
     :param str pattern: Pattern for the light of the LEDs
     """
     
-    # TODO: Parse input and light up the LEDs
-    pass
+    led_data = toInt(pattern)
+    return
 
 if __name__ == '__main__':
     cli()
